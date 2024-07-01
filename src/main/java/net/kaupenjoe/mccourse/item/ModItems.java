@@ -12,13 +12,15 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings() /*or instead use new Item.Settings()*/));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",
             new Item(new FabricItemSettings()));
 
-    private static Item registerItem(String name, Item item){
+    private static <T extends Item> T registerItem(String name, T item){
+        /*return Registry.register(Registries.ITEM,
+                new Identifier(MCCourseMod.MOD_ID, name), item);*/ // Old way
         return Registry.register(Registries.ITEM,
-                new Identifier(MCCourseMod.MOD_ID, name), item);
+                MCCourseMod.id(name), item); // My new personal way to do this
     }
 
     private static void itemGroupIngredients(FabricItemGroupEntries entries){
@@ -28,6 +30,8 @@ public class ModItems {
     public static void registerModItems() {
         MCCourseMod.LOGGER.info("Registering Mod Items for " + MCCourseMod.MOD_ID);
 
+        // Get the event for modifying entries in the ingredients group.
+        // And register an event handler that adds our suspicious item to the ingredients group.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(
                 /*(itemGroupEntries) -> {ModItems.itemGroupIngredients(itemGroupEntries);}*/
                 ModItems::itemGroupIngredients
