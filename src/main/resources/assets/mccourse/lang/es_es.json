@@ -3,5 +3,11 @@
   "item.mccourse.raw_pink_garnet": "Granate rosa en crudo",
 
   "block.mccourse.pink_garnet_block": "Bloque de granate rosa",
-  "block.mccourse.raw_pink_garnet_block": "Bloque de granate rosa en crudo"
+  "block.mccourse.raw_pink_garnet_block": "Bloque de granate rosa en crudo",
+  "block.mccourse.pink_garnet_ore": "Mena de granate rosa",
+  "block.mccourse.deepslate_pink_garnet_ore": "Mena de granate rosa de pizarra profunda",
+  "block.mccourse.nether_pink_garnet_ore": "Mena granate rosa del Nether",
+  "block.mccourse.end_stone_pink_garnet_ore": "Mena granate rosa del End",
+
+  "itemgroup.pink_garnet_group": "Granate rosa mod group"
 }

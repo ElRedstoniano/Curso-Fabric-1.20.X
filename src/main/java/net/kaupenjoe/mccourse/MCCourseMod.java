@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse;
 import net.fabricmc.api.ModInitializer;
 
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.item.ModItemGroup;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroup();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

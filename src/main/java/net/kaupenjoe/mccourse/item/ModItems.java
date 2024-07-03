@@ -11,10 +11,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 public class ModItems {
-    public static final Item PINK_GARNET = registerItem("pink_garnet",
-            new Item(new FabricItemSettings() /*or instead use new Item.Settings()*/));
-    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",
-            new Item(new FabricItemSettings()));
+    public static final Item PINK_GARNET = addToTab(
+            registerItem("pink_garnet",
+            new Item(new FabricItemSettings() /*or instead use new Item.Settings()*/))
+    );
+    public static final Item RAW_PINK_GARNET = addToTab(registerItem("raw_pink_garnet",
+            new Item(new FabricItemSettings())));
 
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
@@ -29,6 +31,10 @@ public class ModItems {
 
         entries.add(ModBlocks.PINK_GARNET_BLOCK);
         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+        entries.add(ModBlocks.PINK_GARNET_ORE);
+        entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
+        entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
+        entries.add(ModBlocks.END_PINK_GARNET_ORE);
     }
     public static void registerModItems() {
         MCCourseMod.LOGGER.info("Registering Mod Items for " + MCCourseMod.MOD_ID);
@@ -39,5 +45,9 @@ public class ModItems {
                 /*(itemGroupEntries) -> {ModItems.itemGroupIngredients(itemGroupEntries);}*/
                 ModItems::itemGroupIngredients
         );
+    }
+
+    public static Item addToTab(Item item){
+        return (Item) ModItemGroup.addToTab(item);
     }
 }
