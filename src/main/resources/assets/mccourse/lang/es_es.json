@@ -9,5 +9,9 @@
   "block.mccourse.nether_pink_garnet_ore": "Mena granate rosa del Nether",
   "block.mccourse.end_stone_pink_garnet_ore": "Mena granate rosa del End",
 
+  "item.mccourse.metal_detector":  "Detector de metales",
+  "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",
+  "item.mccourse.metal_detector.no_valuables": "¡No se han encontrado minerales!",
+
   "itemgroup.pink_garnet_group": "Granate rosa mod group"
 }

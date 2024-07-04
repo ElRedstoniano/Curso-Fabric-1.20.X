@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,9 @@ public class ModItems {
     );
     public static final Item RAW_PINK_GARNET = addToTab(registerItem("raw_pink_garnet",
             new Item(new FabricItemSettings())));
+
+    public static final Item METAL_DETECTOR = addToTab(registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(256))));
 
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
@@ -35,6 +39,8 @@ public class ModItems {
         entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
         entries.add(ModBlocks.END_PINK_GARNET_ORE);
+
+        entries.add(METAL_DETECTOR);
     }
     public static void registerModItems() {
         MCCourseMod.LOGGER.info("Registering Mod Items for " + MCCourseMod.MOD_ID);
