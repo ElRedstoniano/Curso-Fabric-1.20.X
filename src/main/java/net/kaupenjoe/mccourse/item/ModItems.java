@@ -23,6 +23,8 @@ public class ModItems {
             new MetalDetectorItem(new FabricItemSettings().maxDamage(256))));
     public static final Item CAULIFLOWER = addToTab(registerItem("cauliflower",
             new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER))));
+    public static final Item PEAT_BRICK = addToTab(registerItem("peat_brick",
+            new Item(new FabricItemSettings())));
 
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
@@ -44,6 +46,7 @@ public class ModItems {
 
         entries.add(METAL_DETECTOR/*, ModBlocks.END_PINK_GARNET_ORE*/);
         entries.add(CAULIFLOWER);
+        entries.add(PEAT_BRICK);
 
     }
     public static void registerModItems() {
