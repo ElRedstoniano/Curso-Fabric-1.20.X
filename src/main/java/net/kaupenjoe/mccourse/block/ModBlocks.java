@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.block.custom.SoundBlock;
 import net.kaupenjoe.mccourse.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -33,6 +34,10 @@ public class ModBlocks {
     public static final Block DEEPSLATE_PINK_GARNET_ORE = addToTab(registerBlock("deepslate_pink_garnet_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE),
                     UniformIntProvider.create(3, 6))));
+
+
+    public static final Block SOUND_BLOCK = addToTab(registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));
 
     private static <T extends Block> T registerBlock(String name, T block){
         registerBlockItem(name, block);

@@ -40,7 +40,8 @@ public class ModItems {
         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
         entries.add(ModBlocks.END_PINK_GARNET_ORE);
 
-        entries.add(METAL_DETECTOR);
+        entries.add(METAL_DETECTOR/*, ModBlocks.END_PINK_GARNET_ORE*/);
+
     }
     public static void registerModItems() {
         MCCourseMod.LOGGER.info("Registering Mod Items for " + MCCourseMod.MOD_ID);
