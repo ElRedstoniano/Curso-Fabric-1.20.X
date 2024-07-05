@@ -16,5 +16,9 @@
   "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",
   "item.mccourse.metal_detector.no_valuables": "¡No se han encontrado minerales!",
 
-  "itemgroup.pink_garnet_group": "Granate rosa mod group"
+  "itemgroup.pink_garnet_group": "Granate rosa mod group",
+
+  "tooltip.mccourse.metal_detector.tooltip.shift": "¡Haz click derecho en bloques para encontrar rarezas!",
+  "tooltip.mccourse.metal_detector.tooltip": "Presiona §eSHIFT§r para más información",
+  "tooltip.mccourse.sound_block": "Reproduce un sonido agradable cuando se camina por encima o es clickado con click derecho"
 }
