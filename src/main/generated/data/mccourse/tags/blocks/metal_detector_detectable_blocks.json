@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mccourse:pink_garnet_ore",
+    "minecraft:diamond_block",
+    "minecraft:gold_block",
+    "#c:ores"
+  ]
+}

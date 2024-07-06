@@ -1,0 +1,141 @@
+{
+  "mccourse:recipes/misc/pink_garnet_from_blasting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_block": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/raw_pink_garnet_": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_end_stone_pink_garnet_ore": {
+    "criteria": {
+      "has_end_stone_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_item_frame": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_end_stone_pink_garnet_ore": {
+    "criteria": {
+      "has_end_stone_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-07-06 18:14:14 +0100"
+    },
+    "done": false
+  },
+  "mccourse:recipes/misc/pink_garnet": {
+    "criteria": {
+      "has_pink_garnet_block": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-07-06 18:14:13 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

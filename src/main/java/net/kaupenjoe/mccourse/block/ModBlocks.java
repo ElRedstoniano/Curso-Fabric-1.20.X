@@ -10,7 +10,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -28,7 +27,7 @@ public class ModBlocks {
     public static final Block NETHER_PINK_GARNET_ORE = addToTab(registerBlock("nether_pink_garnet_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE),
                     UniformIntProvider.create(3, 6))));
-    public static final Block END_PINK_GARNET_ORE = addToTab(registerBlock("end_stone_pink_garnet_ore",
+    public static final Block END_STONE_PINK_GARNET_ORE = addToTab(registerBlock("end_stone_pink_garnet_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE),
                     UniformIntProvider.create(3, 6))));
     public static final Block DEEPSLATE_PINK_GARNET_ORE = addToTab(registerBlock("deepslate_pink_garnet_ore",
