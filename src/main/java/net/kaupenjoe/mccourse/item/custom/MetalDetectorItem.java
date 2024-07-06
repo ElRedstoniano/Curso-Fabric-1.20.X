@@ -99,7 +99,8 @@ public class MetalDetectorItem extends Item {
                 || blockState.isIn(BlockTags.DIAMOND_ORES) || blockState.isIn(BlockTags.REDSTONE_ORES)
                 || blockState.isIn(BlockTags.LAPIS_ORES) || blockState.isIn(BlockTags.COAL_ORES)
                 || blockState.isIn(BlockTags.EMERALD_ORES) || blockState.isIn(BlockTags.COPPER_ORES);*/
-        return  blockState.isIn(ConventionalBlockTags.ORES) || blockState.isIn(ConventionalBlockTags.CHESTS);
+        return  blockState.isIn(ConventionalBlockTags.ORES) || blockState.isIn(ConventionalBlockTags.CHESTS)
+                || blockState.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
         // Using fabric ores tag & chests
     }
 }
