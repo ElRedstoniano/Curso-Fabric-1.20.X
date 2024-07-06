@@ -11,6 +11,8 @@
   "block.mccourse.nether_pink_garnet_ore": "Mena granate rosa del Nether",
   "block.mccourse.end_stone_pink_garnet_ore": "Mena de granate rosa del End",
   "block.mccourse.sound_block": "Bloque de sonido",
+  "block.mccourse.pink_garnet_stairs": "Escaleras de granate rosa",
+  "block.mccourse.pink_garnet_slab": "Losa de granate rosa",
 
   "item.mccourse.metal_detector":  "Detector de metales",
   "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",

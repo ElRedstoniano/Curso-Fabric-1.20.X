@@ -15,7 +15,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_BLOCK);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool pinkGarnetTexturePool = blockStateModelGenerator
+                .registerCubeAllModelTexturePool(ModBlocks.PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
@@ -23,7 +25,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_PINK_GARNET_ORE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
 
+        pinkGarnetTexturePool.stairs(ModBlocks.PINK_GARNET_STAIRS);
+        pinkGarnetTexturePool.slab(ModBlocks.PINK_GARNET_SLAB);
     }
 
     @Override

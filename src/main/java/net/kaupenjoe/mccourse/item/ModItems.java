@@ -48,6 +48,9 @@ public class ModItems {
         entries.add(CAULIFLOWER);
         entries.add(PEAT_BRICK);
 
+        entries.add(ModBlocks.PINK_GARNET_STAIRS);
+        entries.add(ModBlocks.PINK_GARNET_SLAB);
+
     }
     public static void registerModItems() {
         MCCourseMod.LOGGER.info("Registering Mod Items for " + MCCourseMod.MOD_ID);
