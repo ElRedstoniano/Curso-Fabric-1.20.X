@@ -1,0 +1,309 @@
+{
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_block": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/decorations/pink_garnet_fence": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/redstone/pink_garnet_pressure_plate": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/raw_pink_garnet_": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_wall": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_end_stone_pink_garnet_ore": {
+    "criteria": {
+      "has_end_stone_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_item_frame": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/redstone/pink_garnet_door": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2024-07-07 17:55:35 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_end_stone_pink_garnet_ore": {
+    "criteria": {
+      "has_end_stone_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/redstone/pink_garnet_fence_gate": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-07-07 17:55:10 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet": {
+    "criteria": {
+      "has_pink_garnet_block": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2024-07-07 17:56:26 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/redstone/pink_garnet_button": {
+    "criteria": {
+      "has_pink_garnet_block": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2024-07-07 17:55:17 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/redstone/pink_garnet_trapdoor": {
+    "criteria": {
+      "has_pink_garnet": "2024-07-07 17:55:09 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

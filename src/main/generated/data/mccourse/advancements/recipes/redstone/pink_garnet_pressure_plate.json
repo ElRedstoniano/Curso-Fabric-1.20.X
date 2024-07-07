@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_garnet_block": {
+    "has_pink_garnet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "mccourse:pink_garnet_block"
+              "mccourse:pink_garnet"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pink_garnet_block",
+      "has_pink_garnet",
       "has_the_recipe"
     ]
   ],

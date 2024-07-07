@@ -2,21 +2,20 @@ package net.kaupenjoe.mccourse.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.block.ButtonBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends FabricRecipeProvider {
@@ -63,13 +62,43 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         // Take a look at VanillaReciperProvider
 
         offerButtonRecipe(exporter, ModBlocks.PINK_GARNET_BUTTON, ModBlocks.PINK_GARNET_BLOCK);
-        offerPressurePlateRecipe(exporter, ModBlocks.PINK_GARNET_PRESSURE_PLATE,ModBlocks.PINK_GARNET_BLOCK);
+        offerPressurePlateRecipe(exporter, ModBlocks.PINK_GARNET_PRESSURE_PLATE,ModItems.PINK_GARNET);
+
+        offerFenceRecipe(exporter, ModBlocks.PINK_GARNET_FENCE, ModItems.PINK_GARNET);
+        offerFenceGateRecipe(exporter, ModBlocks.PINK_GARNET_FENCE_GATE, ModItems.PINK_GARNET);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.PINK_GARNET_WALL, ModBlocks.PINK_GARNET_BLOCK);
+        offerDoorRecipe(exporter, ModBlocks.PINK_GARNET_DOOR, ModItems.PINK_GARNET);
+        offerTrapdoorRecipe(exporter, ModBlocks.PINK_GARNET_TRAPDOOR, ModItems.PINK_GARNET);
     }
 
-    private void offerButtonRecipe(Consumer<RecipeJsonProvider> exporter, Block outputButtonBlock, Block inputBlock) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, outputButtonBlock)
-                .input(inputBlock)
-                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(inputBlock))
-                .offerTo(exporter, new Identifier(getRecipeName(outputButtonBlock)));
+    private void offerDoorRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        createDoorRecipe(output, Ingredient.ofItems(input))
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    private void offerTrapdoorRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        createTrapdoorRecipe(output, Ingredient.ofItems(input))
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    private void offerFenceRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        createFenceRecipe(output, Ingredient.ofItems(input))
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    private void offerFenceGateRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        createFenceGateRecipe(output, Ingredient.ofItems(input))
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    private void offerButtonRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, output)
+                .input(input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 }
