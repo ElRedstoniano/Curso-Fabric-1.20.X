@@ -18,6 +18,8 @@
   "block.mccourse.pink_garnet_fence": "Valla de granate rosa",
   "block.mccourse.pink_garnet_fence_gate": "Puerta de valla de granate rosa",
   "block.mccourse.pink_garnet_wall": "Muro de granate rosa",
+  "block.mccourse.pink_garnet_door": "Puerta de granate rosa",
+  "block.mccourse.pink_garnet_trapdoor": "Trampilla de granate rosa",
 
   "item.mccourse.metal_detector":  "Detector de metales",
   "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",

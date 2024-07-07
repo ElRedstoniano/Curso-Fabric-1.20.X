@@ -42,7 +42,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.PINK_GARNET_PRESSURE_PLATE,
                         ModBlocks.PINK_GARNET_FENCE,
                         ModBlocks.PINK_GARNET_FENCE_GATE,
-                        ModBlocks.PINK_GARNET_WALL
+                        ModBlocks.PINK_GARNET_WALL,
+                        ModBlocks.PINK_GARNET_DOOR,
+                        ModBlocks.PINK_GARNET_TRAPDOOR
                         );
 
         //There is not garnet button on the list because its settings are a copy of stone buttons (no need for tools)

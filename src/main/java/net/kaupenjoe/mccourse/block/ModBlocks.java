@@ -51,6 +51,11 @@ public class ModBlocks {
     public static final Block PINK_GARNET_WALL = addToTab(registerBlock("pink_garnet_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));
 
+    public static final Block PINK_GARNET_DOOR = addToTab(registerBlock("pink_garnet_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON)));
+    public static final Block PINK_GARNET_TRAPDOOR = addToTab(registerBlock("pink_garnet_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR), BlockSetType.IRON)));
+
 
 
     public static final Block SOUND_BLOCK = addToTab(registerBlock("sound_block",
