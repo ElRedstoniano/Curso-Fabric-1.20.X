@@ -44,6 +44,14 @@ public class ModBlocks {
             new PressurePlateBlock( PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE), BlockSetType.IRON)));
 
+    public static final Block PINK_GARNET_FENCE = addToTab(registerBlock("pink_garnet_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));
+    public static final Block PINK_GARNET_FENCE_GATE = addToTab(registerBlock("pink_garnet_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.ACACIA)));
+    public static final Block PINK_GARNET_WALL = addToTab(registerBlock("pink_garnet_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));
+
+
 
     public static final Block SOUND_BLOCK = addToTab(registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));

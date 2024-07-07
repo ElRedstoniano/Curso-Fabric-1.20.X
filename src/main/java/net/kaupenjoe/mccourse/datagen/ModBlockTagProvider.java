@@ -39,7 +39,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.END_STONE_PINK_GARNET_ORE,
                         ModBlocks.PINK_GARNET_STAIRS,
                         ModBlocks.PINK_GARNET_SLAB,
-                        ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+                        ModBlocks.PINK_GARNET_PRESSURE_PLATE,
+                        ModBlocks.PINK_GARNET_FENCE,
+                        ModBlocks.PINK_GARNET_FENCE_GATE,
+                        ModBlocks.PINK_GARNET_WALL
+                        );
 
         //There is not garnet button on the list because its settings are a copy of stone buttons (no need for tools)
 
@@ -52,5 +56,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_ORE,
                         ModBlocks.PINK_GARNET_BLOCK,
                         ModBlocks.RAW_PINK_GARNET_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PINK_GARNET_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.PINK_GARNET_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PINK_GARNET_FENCE_GATE);
+        // Those tags makes sure that walls and fences connect themselves
     }
 }

@@ -14,7 +14,10 @@
   "block.mccourse.pink_garnet_stairs": "Escaleras de granate rosa",
   "block.mccourse.pink_garnet_slab": "Losa de granate rosa",
   "block.mccourse.pink_garnet_button": "Botón de granate rosa",
-  "block.mccourse.pink_pressure_plate": "Placa de presión de granate rosa",
+  "block.mccourse.pink_garnet_pressure_plate": "Placa de presión de granate rosa",
+  "block.mccourse.pink_garnet_fence": "Valla de granate rosa",
+  "block.mccourse.pink_garnet_fence_gate": "Puerta de valla de granate rosa",
+  "block.mccourse.pink_garnet_wall": "Muro de granate rosa",
 
   "item.mccourse.metal_detector":  "Detector de metales",
   "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",
