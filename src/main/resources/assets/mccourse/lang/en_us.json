@@ -13,6 +13,8 @@
   "block.mccourse.sound_block": "Sound Block",
   "block.mccourse.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.mccourse.pink_garnet_slab": "Pink Garnet Slabs",
+  "block.mccourse.pink_garnet_button": "Pink Garnet Button",
+  "block.mccourse.pink_pressure_plate": "Pink Garnet Pressure Plate",
 
   "item.mccourse.metal_detector":  "Metal detector",
   "item.mccourse.metal_detector.found":  "{%s} has been found at %s coordinates",

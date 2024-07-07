@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.minecraft.block.Block;
+import net.minecraft.block.ButtonBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -58,5 +61,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         , RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 100, "pink_garnet");
 
         // Take a look at VanillaReciperProvider
+
+        offerButtonRecipe(exporter, ModBlocks.PINK_GARNET_BUTTON, ModBlocks.PINK_GARNET_BLOCK);
+        offerPressurePlateRecipe(exporter, ModBlocks.PINK_GARNET_PRESSURE_PLATE,ModBlocks.PINK_GARNET_BLOCK);
+    }
+
+    private void offerButtonRecipe(Consumer<RecipeJsonProvider> exporter, Block outputButtonBlock, Block inputBlock) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, outputButtonBlock)
+                .input(inputBlock)
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(inputBlock))
+                .offerTo(exporter, new Identifier(getRecipeName(outputButtonBlock)));
     }
 }

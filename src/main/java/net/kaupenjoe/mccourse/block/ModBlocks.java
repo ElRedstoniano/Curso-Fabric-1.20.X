@@ -37,6 +37,13 @@ public class ModBlocks {
     public static final Block PINK_GARNET_SLAB = addToTab(registerBlock("pink_garnet_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));
 
+    public static final Block PINK_GARNET_BUTTON = addToTab(registerBlock("pink_garnet_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.IRON,
+                    10, true))); // wooden == proyectiles can activate the button
+    public static final Block PINK_GARNET_PRESSURE_PLATE = addToTab(registerBlock("pink_garnet_pressure_plate",
+            new PressurePlateBlock( PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE), BlockSetType.IRON)));
+
 
     public static final Block SOUND_BLOCK = addToTab(registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))));

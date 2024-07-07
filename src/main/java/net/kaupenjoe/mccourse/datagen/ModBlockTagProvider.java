@@ -38,7 +38,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.NETHER_PINK_GARNET_ORE,
                         ModBlocks.END_STONE_PINK_GARNET_ORE,
                         ModBlocks.PINK_GARNET_STAIRS,
-                        ModBlocks.PINK_GARNET_SLAB);
+                        ModBlocks.PINK_GARNET_SLAB,
+                        ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+        //There is not garnet button on the list because its settings are a copy of stone buttons (no need for tools)
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE,
