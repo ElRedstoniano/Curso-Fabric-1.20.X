@@ -41,5 +41,53 @@
     },
     "done": false
   },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-08 15:13:08 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-08 15:13:08 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-08 15:08:54 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

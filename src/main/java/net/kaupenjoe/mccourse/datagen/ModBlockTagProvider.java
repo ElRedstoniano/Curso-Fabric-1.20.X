@@ -6,8 +6,11 @@ import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.ModTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -50,8 +53,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //There is not garnet button on the list because its settings are a copy of stone buttons (no need for tools)
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE,
-                        ModBlocks.NETHER_PINK_GARNET_ORE,
+                .add(/*ModBlocks.DEEPSLATE_PINK_GARNET_ORE,*/
+                        /*ModBlocks.NETHER_PINK_GARNET_ORE,*/
                         ModBlocks.END_STONE_PINK_GARNET_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -66,5 +69,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.PINK_GARNET_FENCE_GATE);
         // Those tags makes sure that walls and fences connect themselves
+
+
+        // Tag for Tool Material (Netherite)
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
+                new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.NETHER_PINK_GARNET_ORE);
+
+        // Tag for our custom Tool Material (Pink Garnet)
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
+                new Identifier("fabric", "needs_tool_level_5")))
+                .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
+
     }
 }

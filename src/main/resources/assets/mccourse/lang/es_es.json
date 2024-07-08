@@ -4,11 +4,18 @@
   "item.mccourse.cauliflower": "Coliflor",
   "item.mccourse.peat_brick": "Ladrillo de turba",
 
+  "item.mccourse.pink_garnet_sword": "Espada de granate rosa",
+  "item.mccourse.pink_garnet_shovel": "Pala de granate rosa",
+  "item.mccourse.pink_garnet_hoe": "Azada de granate rosa",
+  "item.mccourse.pink_garnet_axe": "Hacha de granate rosa",
+  "item.mccourse.pink_garnet_pickaxe": "Pico de granate rosa",
+
+
   "block.mccourse.pink_garnet_block": "Bloque de granate rosa",
   "block.mccourse.raw_pink_garnet_block": "Bloque de granate rosa en crudo",
   "block.mccourse.pink_garnet_ore": "Mena de granate rosa",
   "block.mccourse.deepslate_pink_garnet_ore": "Mena de granate rosa de pizarra profunda",
-  "block.mccourse.nether_pink_garnet_ore": "Mena granate rosa del Nether",
+  "block.mccourse.nether_pink_garnet_ore": "Mena de granate rosa del Nether",
   "block.mccourse.end_stone_pink_garnet_ore": "Mena de granate rosa del End",
   "block.mccourse.sound_block": "Bloque de sonido",
   "block.mccourse.pink_garnet_stairs": "Escaleras de granate rosa",
