@@ -6,10 +6,13 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.MetalDetectorItem;
+import net.kaupenjoe.mccourse.item.custom.ModPoisonSwordItem;
 import net.kaupenjoe.mccourse.item.custom.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+
+import java.util.List;
 
 public class ModItems {
     public static final Item PINK_GARNET = addToTab(
@@ -27,7 +30,7 @@ public class ModItems {
             new Item(new FabricItemSettings())));
 
     public static final Item PINK_GARNET_SWORD = addToTab(registerItem("pink_garnet_sword",
-            new SwordItem(ModToolMaterial.PINK_GARNET, 2, 2f,new FabricItemSettings())));
+            new ModPoisonSwordItem(ModToolMaterial.PINK_GARNET, 2, 2f,new FabricItemSettings())));
     public static final Item PINK_GARNET_PICKAXE = addToTab(registerItem("pink_garnet_pickaxe",
             new PickaxeItem(ModToolMaterial.PINK_GARNET, 1, 1f,new FabricItemSettings())));
     public static final Item PINK_GARNET_SHOVEL = addToTab(registerItem("pink_garnet_shovel",
@@ -39,6 +42,15 @@ public class ModItems {
 
     public static final Item PINK_GARNET_PAXEL = addToTab(registerItem("pink_garnet_paxel",
             new PaxelItem(ModToolMaterial.PINK_GARNET, 0, 0f,new FabricItemSettings())));
+
+    public static final Item PINK_GARNET_HELMET = addToTab(registerItem("pink_garnet_helmet",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET ,new FabricItemSettings())));
+    public static final Item PINK_GARNET_CHESTPLATE = addToTab(registerItem("pink_garnet_chestplate",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE ,new FabricItemSettings())));
+    public static final Item PINK_GARNET_LEGGINGS = addToTab(registerItem("pink_garnet_leggings",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
+    public static final Item PINK_GARNET_BOOTS = addToTab(registerItem("pink_garnet_boots",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
 
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
@@ -75,7 +87,12 @@ public class ModItems {
     }
 
     private static void itemGroupCombat(FabricItemGroupEntries entries){
-        entries.addAfter(Items.NETHERITE_SWORD,ModItems.PINK_GARNET_SWORD);
+        entries.addAfter(Items.NETHERITE_SWORD,ModItems.PINK_GARNET_SWORD,
+                ModItems.PINK_GARNET_HELMET,
+                ModItems.PINK_GARNET_CHESTPLATE,
+                ModItems.PINK_GARNET_LEGGINGS,
+                ModItems.PINK_GARNET_BOOTS
+                );
     }
 
     private static void itemGroupBuildingBlocks(FabricItemGroupEntries entries){

@@ -1,6 +1,6 @@
-// 1.20.1	2024-07-08T17:48:37.161668	MC Course Mod/Tags for minecraft:block
-054139939470485ffcc4479b643d9d6e0f51496d data\minecraft\tags\blocks\fences.json
+// 1.20.1	2024-07-09T00:13:54.9253733	MC Course Mod/Tags for minecraft:block
 517632cca94e9946eb0ffa70b9c76633dbe1cf71 data\minecraft\tags\blocks\walls.json
+054139939470485ffcc4479b643d9d6e0f51496d data\minecraft\tags\blocks\fences.json
 22d004718e134f5e0bb59a6559d627eda2806e1f data\mccourse\tags\blocks\pink_garnet_ores.json
 03ee821265d83284e4cd34a4b2c9075b49ed2a6a data\fabric\tags\blocks\needs_tool_level_5.json
 c716880e6ff6532ef3f8279ddfa40285b01886f3 data\mccourse\tags\blocks\mineable\paxel.json
