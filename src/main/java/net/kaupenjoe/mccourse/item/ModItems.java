@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.MetalDetectorItem;
+import net.kaupenjoe.mccourse.item.custom.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -36,6 +37,9 @@ public class ModItems {
     public static final Item PINK_GARNET_HOE = addToTab(registerItem("pink_garnet_hoe",
             new HoeItem(ModToolMaterial.PINK_GARNET, 0, 0f,new FabricItemSettings())));
 
+    public static final Item PINK_GARNET_PAXEL = addToTab(registerItem("pink_garnet_paxel",
+            new PaxelItem(ModToolMaterial.PINK_GARNET, 0, 0f,new FabricItemSettings())));
+
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
                 new Identifier(MCCourseMod.MOD_ID, name), item);*/ // Old way
@@ -59,6 +63,22 @@ public class ModItems {
         entries.add(CAULIFLOWER);
         entries.add(PEAT_BRICK);
 
+    }
+
+    private static void itemGroupTools(FabricItemGroupEntries entries){
+//        entries.addAfter( Items.NETHERITE_HOE, ModItems.PINK_GARNET_SWORD);
+        entries.addAfter(Items.NETHERITE_HOE,ModItems.PINK_GARNET_PICKAXE,
+                ModItems.PINK_GARNET_SHOVEL,
+                ModItems.PINK_GARNET_AXE,
+                ModItems.PINK_GARNET_PAXEL,
+                ModItems.PINK_GARNET_HOE);
+    }
+
+    private static void itemGroupCombat(FabricItemGroupEntries entries){
+        entries.addAfter(Items.NETHERITE_SWORD,ModItems.PINK_GARNET_SWORD);
+    }
+
+    private static void itemGroupBuildingBlocks(FabricItemGroupEntries entries){
         entries.add(ModBlocks.PINK_GARNET_STAIRS);
         entries.add(ModBlocks.PINK_GARNET_SLAB);
 
@@ -70,19 +90,6 @@ public class ModItems {
         entries.add(ModBlocks.PINK_GARNET_WALL);
         entries.add(ModBlocks.PINK_GARNET_DOOR);
         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
-
-    }
-
-    private static void itemGroupTools(FabricItemGroupEntries entries){
-//        entries.addAfter( Items.NETHERITE_HOE, ModItems.PINK_GARNET_SWORD);
-        entries.addAfter(Items.NETHERITE_HOE,ModItems.PINK_GARNET_PICKAXE,
-                ModItems.PINK_GARNET_SHOVEL,
-                ModItems.PINK_GARNET_AXE,
-                ModItems.PINK_GARNET_HOE);
-    }
-
-    private static void itemGroupCombat(FabricItemGroupEntries entries){
-        entries.addAfter(Items.NETHERITE_SWORD,ModItems.PINK_GARNET_SWORD);
     }
 
     public static void registerModItems() {
@@ -100,6 +107,9 @@ public class ModItems {
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(
                 ModItems::itemGroupCombat
+        );
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(
+                ModItems::itemGroupBuildingBlocks
         );
     }
 
