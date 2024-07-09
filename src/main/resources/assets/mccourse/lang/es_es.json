@@ -15,6 +15,7 @@
   "item.mccourse.pink_garnet_chestplate": "Peto de granate rosa",
   "item.mccourse.pink_garnet_leggings": "Pantalones de granate rosa",
   "item.mccourse.pink_garnet_boots": "Botas de granate rosa",
+  "item.mccourse.pink_garnet_horse_armor": "Armadura de granate rosa para caballo ",
 
   "block.mccourse.pink_garnet_block": "Bloque de granate rosa",
   "block.mccourse.raw_pink_garnet_block": "Bloque de granate rosa en crudo",
@@ -38,6 +39,8 @@
   "item.mccourse.metal_detector.no_valuables": "¡No se han encontrado minerales!",
 
   "itemgroup.pink_garnet_group": "Granate rosa mod group",
+
+  "enchantment.mccourse.lightning_striker": "Invocación de rayos",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "¡Haz click derecho en bloques para encontrar rarezas!",
   "tooltip.mccourse.metal_detector.tooltip": "Presiona §eSHIFT§r para más información",

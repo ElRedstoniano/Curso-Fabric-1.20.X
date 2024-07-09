@@ -20,6 +20,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_HELMET,
                         ModItems.PINK_GARNET_CHESTPLATE,
                         ModItems.PINK_GARNET_LEGGINGS,
-                        ModItems.PINK_GARNET_BOOTS);
+                        ModItems.PINK_GARNET_BOOTS );
     }
 }

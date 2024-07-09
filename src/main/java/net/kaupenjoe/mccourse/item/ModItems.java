@@ -6,13 +6,12 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.MetalDetectorItem;
+import net.kaupenjoe.mccourse.item.custom.ModArmorItem;
 import net.kaupenjoe.mccourse.item.custom.ModPoisonSwordItem;
 import net.kaupenjoe.mccourse.item.custom.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-
-import java.util.List;
 
 public class ModItems {
     public static final Item PINK_GARNET = addToTab(
@@ -44,13 +43,21 @@ public class ModItems {
             new PaxelItem(ModToolMaterial.PINK_GARNET, 0, 0f,new FabricItemSettings())));
 
     public static final Item PINK_GARNET_HELMET = addToTab(registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET ,new FabricItemSettings())));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET ,new FabricItemSettings())));
     public static final Item PINK_GARNET_CHESTPLATE = addToTab(registerItem("pink_garnet_chestplate",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE ,new FabricItemSettings())));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE ,new FabricItemSettings())));
     public static final Item PINK_GARNET_LEGGINGS = addToTab(registerItem("pink_garnet_leggings",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
     public static final Item PINK_GARNET_BOOTS = addToTab(registerItem("pink_garnet_boots",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
+    // Note: It's not necessary to apply ModArmorItem class to all armor items, just adding one will execute the code on
+    // the ModArmorItem class
+
+
+    public static final Item PINK_GARNET_HORSE_ARMOR = addToTab(registerItem("pink_garnet_horse_armor",
+            new HorseArmorItem(14, "pink_garnet"/*3d model name*/ ,new FabricItemSettings())));
+
+
 
     private static <T extends Item> T registerItem(String name, T item){
         /*return Registry.register(Registries.ITEM,
@@ -91,7 +98,8 @@ public class ModItems {
                 ModItems.PINK_GARNET_HELMET,
                 ModItems.PINK_GARNET_CHESTPLATE,
                 ModItems.PINK_GARNET_LEGGINGS,
-                ModItems.PINK_GARNET_BOOTS
+                ModItems.PINK_GARNET_BOOTS,
+                ModItems.PINK_GARNET_HORSE_ARMOR
                 );
     }
 
