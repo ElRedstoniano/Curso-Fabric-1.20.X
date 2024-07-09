@@ -1,13 +1,19 @@
 package net.kaupenjoe.mccourse.datagen;
 
+import com.google.common.collect.ImmutableMap;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
+
+import java.util.Map;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -38,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        registerCustomLamp(blockStateModelGenerator, ModBlocks.PINK_GARNET_LAMP_BLOCK);
     }
 
     @Override
@@ -62,5 +70,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
+    }
+
+    private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator, Block lampBlock) {
+        Identifier identifier = TexturedModel.CUBE_ALL.upload(lampBlock, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(lampBlock, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector
+                .accept(VariantsBlockStateSupplier.create(lampBlock)
+                        .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED,
+                                identifier2, identifier)));
     }
 }
