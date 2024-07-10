@@ -1,6 +1,9 @@
 package net.kaupenjoe.mccourse.item.custom;
 
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
+import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.util.ColorUtil;
+import net.kaupenjoe.mccourse.util.InventoryUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.gui.screen.Screen;
@@ -9,12 +12,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Colors;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -22,6 +27,8 @@ import org.jetbrains.annotations.Nullable;
 import java.awt.*;
 import java.text.NumberFormat;
 import java.util.List;
+
+import static net.kaupenjoe.mccourse.util.ColorUtil.removeAlpha;
 
 public class MetalDetectorItem extends Item {
     //private NumberFormat stringFormatter = NumberFormat.getInstance();
@@ -44,6 +51,11 @@ public class MetalDetectorItem extends Item {
                 if(isValuableBlock(blockState)){
                     outputValuableCoordinates(positionClicked.down(i), player, block);
                     foundblock = true;
+
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
+                        addNbtDataToDataTablet(player, positionClicked.down(i), block);
+                    }
+
                     break;
                 }
             }
@@ -58,6 +70,25 @@ public class MetalDetectorItem extends Item {
 
         //return super.useOnBlock(context);
         return ActionResult.SUCCESS;
+    }
+
+    private void addNbtDataToDataTablet(PlayerEntity player, BlockPos position, Block block) {
+        ItemStack dataTabletStack = player.getInventory()
+                .getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
+
+        NbtCompound nbtData = new NbtCompound();
+        String putString = Text.Serializer.toJson(
+                Text.translatable("item.mccourse.metal_detector.found", coloredFromBlockText(block),
+                        Text.of("(" + position.getX() + ", " + position.getY() + ", " + position.getZ() + ")")
+                                .copy().setStyle(Style.EMPTY.withColor(rgbTextColor(Color.CYAN))
+                                        /*TextColor.fromRgb(Color.CYAN.getRGB()))))*/)));
+        nbtData.putString("mccourse.last_valuable_found", putString);
+
+        dataTabletStack.setNbt(nbtData);
+    }
+
+    private TextColor rgbTextColor(Color color) {
+        return TextColor.fromRgb(ColorUtil.removeAlpha(color).getRGB());
     }
 
     @Override
@@ -82,14 +113,13 @@ public class MetalDetectorItem extends Item {
         player.sendMessage(Text.translatable("item.mccourse.metal_detector.found", coloredFromBlockText(block),
                 Text.of("(" + position.getX() + ", " + position.getY() + ", " + position.getZ() + ")")
                         .copy().setStyle(Style.EMPTY.withColor(TextColor.fromRgb(Color.CYAN.getRGB()))))
+
         );
     }
 
     private MutableText coloredFromBlockText(Block block) {
-        return Text.of(block.getName().getString()).copy().setStyle(
+        return Text.translatable(/*block.getName().getString()*/block.getTranslationKey()).copy().setStyle(
                 Style.EMPTY.withColor(block.getDefaultMapColor().color));
-        //Note: .withColor() can actually use .i.e. TextColor.fromRgb(new Color(255, 0, 0).getRGB()) to actually
-        // use a rgb color
     }
 
 

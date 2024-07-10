@@ -1,0 +1,183 @@
+{
+  "mccourse:recipes/misc/pink_garnet_from_blasting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/shaper_armor_trim_smithing_template": {
+    "criteria": {
+      "has_shaper_armor_trim_smithing_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wild_armor_trim_smithing_template": {
+    "criteria": {
+      "has_wild_armor_trim_smithing_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wild_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/ward_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_blasting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_deepslate_pink_garnet_ore": {
+    "criteria": {
+      "has_deepslate_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_raw_pink_garnet": {
+    "criteria": {
+      "has_raw_pink_garnet": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-07-10 16:16:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/ward_armor_trim_smithing_template": {
+    "criteria": {
+      "has_ward_armor_trim_smithing_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
+    "criteria": {
+      "has_nether_pink_garnet_ore": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/shaper_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2024-07-10 16:16:52 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

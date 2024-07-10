@@ -5,10 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
-import net.kaupenjoe.mccourse.item.custom.MetalDetectorItem;
-import net.kaupenjoe.mccourse.item.custom.ModArmorItem;
-import net.kaupenjoe.mccourse.item.custom.ModPoisonSwordItem;
-import net.kaupenjoe.mccourse.item.custom.PaxelItem;
+import net.kaupenjoe.mccourse.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -50,6 +47,9 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
     public static final Item PINK_GARNET_BOOTS = addToTab(registerItem("pink_garnet_boots",
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
+
+    public static final Item DATA_TABLET = addToTab(registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().maxCount(1 ))));
     // Note: It's not necessary to apply ModArmorItem class to all armor items, just adding one will execute the code on
     // the ModArmorItem class
 
@@ -90,7 +90,9 @@ public class ModItems {
                 ModItems.PINK_GARNET_SHOVEL,
                 ModItems.PINK_GARNET_AXE,
                 ModItems.PINK_GARNET_PAXEL,
-                ModItems.PINK_GARNET_HOE);
+                ModItems.PINK_GARNET_HOE,
+                ModItems.DATA_TABLET
+                );
     }
 
     private static void itemGroupCombat(FabricItemGroupEntries entries){
