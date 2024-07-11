@@ -1,19 +1,23 @@
 package net.kaupenjoe.mccourse.datagen;
 
-import com.google.common.collect.ImmutableMap;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.state.property.Properties;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 import java.util.Map;
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -71,7 +75,45 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
+
+        registerDataTablet(itemModelGenerator,ModItems.DATA_TABLET);
+    }
+    // Took a look from ItemModelGenerator.registerArmor() method
+    private void registerDataTablet(ItemModelGenerator itemModelGenerator, Item dataTablet) {
+        //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
+        Identifier identifier = Identifier.of(MCCourseMod.MOD_ID, "item/" + getItemIdAsString(dataTablet));
+        Identifier identifier2 = Identifier.of(MCCourseMod.MOD_ID, "item/" +
+                getItemIdAsString(dataTablet) + "_off");
+        /*Model model = new Model(Optional.of(new Identifier("item/generated")), Optional.empty(),
+                TextureKey.LAYER0);*/
+        /*model*/Models.GENERATED.upload(identifier, TextureMap.layer0(identifier2), itemModelGenerator.writer,
+                (id, textures) -> createDataTablet(id, textures, dataTablet/*, model*/));
+
+        Identifier identifier3 = Identifier.of(MCCourseMod.MOD_ID, "item/" +
+                getItemIdAsString(dataTablet) + "_on");
+        Models.GENERATED.upload(identifier3, TextureMap.layer0(identifier), itemModelGenerator.writer);
+    }
+    private JsonObject createDataTablet(Identifier id, Map<TextureKey, Identifier> textures, Item item/*, Model model*/){
+        System.out.println("TUTORIAL: " + id.toString() + " - " + textures.toString());
+
+        JsonObject jsonObject = /*model*/Models.GENERATED.createJson(id, textures);
+        JsonArray overridesJsonArray = new JsonArray();
+
+        JsonObject jsonObject2 = new JsonObject();
+        JsonObject jsonObject3 = new JsonObject();
+        jsonObject3.addProperty( MCCourseMod.MOD_ID + ":on", 1);
+        jsonObject2.add("predicate", jsonObject3);
+        jsonObject2.addProperty("model", MCCourseMod.MOD_ID + ":item/" +
+                getItemIdAsString(item) + "_on");
+        overridesJsonArray.add(jsonObject2);
+
+        jsonObject.add("overrides", overridesJsonArray);
+        return jsonObject;
+    }
+
+    private String getItemIdAsString(Item item) {
+        return Registries.ITEM.getId(item).getPath();
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator, Block lampBlock) {
