@@ -17,12 +17,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/charcoal": {
-    "criteria": {
-      "has_log": "2024-07-08 22:12:59 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
       "unlock_right_away": "2024-07-08 22:12:24 +0100"
@@ -59,9 +53,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_planks": {
+  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
     "criteria": {
-      "has_logs": "2024-07-08 22:12:59 +0100"
+      "has_nether_pink_garnet_ore": "2024-07-08 22:12:24 +0100"
     },
     "done": true
   },
@@ -71,9 +65,15 @@
     },
     "done": false
   },
-  "mccourse:recipes/misc/pink_garnet_from_smelting_nether_pink_garnet_ore": {
+  "minecraft:recipes/misc/charcoal": {
     "criteria": {
-      "has_nether_pink_garnet_ore": "2024-07-08 22:12:24 +0100"
+      "has_log": "2024-07-08 22:12:59 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2024-07-08 22:12:59 +0100"
     },
     "done": true
   },

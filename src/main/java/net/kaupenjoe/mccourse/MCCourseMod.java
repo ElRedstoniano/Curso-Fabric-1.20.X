@@ -17,15 +17,17 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroup.registerItemGroup();
 
+		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
+
 		ModBlocks.registerModBlocks();
 
 		ModRegistries.registerModStuffs();
 		ModEnchantments.registerModEnchantments();
 
 		LOGGER.info("Hello Fabric world!");
+
 	}
 
 	public static Identifier id(String path){

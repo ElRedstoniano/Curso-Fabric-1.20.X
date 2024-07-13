@@ -47,6 +47,8 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
     public static final Item PINK_GARNET_BOOTS = addToTab(registerItem("pink_garnet_boots",
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
+    public static final Item CAULIFLOWER_SEEDS = addToTab(registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new FabricItemSettings())));
 
     public static final Item DATA_TABLET = addToTab(registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().maxCount(1 ))));
@@ -81,6 +83,7 @@ public class ModItems {
         entries.add(METAL_DETECTOR/*, ModBlocks.END_PINK_GARNET_ORE*/);
         entries.add(CAULIFLOWER);
         entries.add(PEAT_BRICK);
+        entries.add(CAULIFLOWER_SEEDS);
 
     }
 

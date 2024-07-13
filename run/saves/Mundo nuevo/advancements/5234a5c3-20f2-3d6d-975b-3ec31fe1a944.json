@@ -113,12 +113,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2024-07-10 00:34:19 +0100"
-    },
-    "done": false
-  },
   "minecraft:recipes/misc/ward_armor_trim_smithing_template": {
     "criteria": {
       "has_ward_armor_trim_smithing_template": "2024-07-10 00:34:17 +0100"
@@ -178,6 +172,12 @@
       "has_redstone": "2024-07-10 00:34:17 +0100"
     },
     "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-07-10 00:34:19 +0100"
+    },
+    "done": false
   },
   "DataVersion": 3465
 }

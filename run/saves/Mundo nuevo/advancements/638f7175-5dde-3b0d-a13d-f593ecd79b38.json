@@ -1,0 +1,27 @@
+{
+  "mccourse:recipes/misc/pink_garnet_from_blasting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-13 00:54:38 +0100"
+    },
+    "done": true
+  },
+  "mccourse:recipes/misc/pink_garnet_from_smelting_pink_garnet_ore": {
+    "criteria": {
+      "has_pink_garnet_ore": "2024-07-13 00:54:38 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-07-13 00:54:32 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-07-13 00:54:33 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

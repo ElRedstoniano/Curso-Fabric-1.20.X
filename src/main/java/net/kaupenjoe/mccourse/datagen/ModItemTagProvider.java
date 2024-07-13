@@ -21,5 +21,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                         ModItems.PINK_GARNET_CHESTPLATE,
                         ModItems.PINK_GARNET_LEGGINGS,
                         ModItems.PINK_GARNET_BOOTS );
+
+        getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS)
+                .add(ModItems.CAULIFLOWER_SEEDS);
     }
 }

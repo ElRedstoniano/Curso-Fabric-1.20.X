@@ -61,6 +61,16 @@ jar {
 	}
 }
 
+loom {
+	runs {
+		configureEach {
+			property("fabric.debug.disableModShuffle")
+		}
+	}
+}
+// https://discord.com/channels/507304429255393322/507982478276034570/1119770571018866741
+// https://fabricmc.net/wiki/documentation:fabric_loom#default_configuration
+
 // configure the maven publication
 publishing {
 	publications {

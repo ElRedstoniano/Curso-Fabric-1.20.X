@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.block.custom.CauliflowerCropBlock;
 import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.block.custom.SoundBlock;
 import net.kaupenjoe.mccourse.item.ModItemGroup;
@@ -63,6 +64,9 @@ public class ModBlocks {
                     .instrument(Instrument.BASEDRUM).requiresTool().luminance(
                             state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0))));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
 
 
     public static final Block SOUND_BLOCK = addToTab(registerBlock("sound_block",
@@ -70,6 +74,9 @@ public class ModBlocks {
 
     private static <T extends Block> T registerBlock(String name, T block){
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, MCCourseMod.id(name), block);
+    }
+    private static <T extends Block> T registerBlockWithoutBlockItem(String name, T block){
         return Registry.register(Registries.BLOCK, MCCourseMod.id(name), block);
     }
 
