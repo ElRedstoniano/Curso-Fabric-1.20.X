@@ -8,7 +8,6 @@ import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
-import net.minecraft.util.math.BlockPos;
 
 public class ReturnHomeCommand {
     public static void register(CommandDispatcher<ServerCommandSource> serverCommandSourceCommandDispatcher,
@@ -23,6 +22,7 @@ public class ReturnHomeCommand {
     public static int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         IEntityDataSaver player = ((IEntityDataSaver) context.getSource().getPlayer());
 
+        assert player != null;
         int[] homepos = player.getPersistentData().getIntArray("homepos");
 
         if(homepos.length != 0){
