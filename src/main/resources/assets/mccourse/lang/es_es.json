@@ -48,5 +48,9 @@
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "¡Haz click derecho en bloques para encontrar rarezas!",
   "tooltip.mccourse.metal_detector.tooltip": "Presiona §eSHIFT§r para más información",
-  "tooltip.mccourse.sound_block": "Reproduce un sonido agradable cuando se camina por encima o es clickado con click derecho"
+  "tooltip.mccourse.sound_block": "Reproduce un sonido agradable cuando se camina por encima o es clickado con click derecho",
+
+  "commands.mccourse.home_set": "Hogar establecido en %s",
+  "commands.mccourse.no_home_return": "No se ha establecido una posición de hogar!",
+  "commands.mccourse.home_return_sucess": "¡Jugador devuelto al hogar!"
 }

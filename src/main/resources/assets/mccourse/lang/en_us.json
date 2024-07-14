@@ -48,5 +48,9 @@
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
-  "tooltip.mccourse.sound_block": "Plays a nice sound when Walking on or being Right-Clicked"
+  "tooltip.mccourse.sound_block": "Plays a nice sound when Walking on or being Right-Clicked",
+
+  "commands.mccourse.home_set": "Home position set at %s",
+  "commands.mccourse.no_home_return": "No Home position has been set!",
+  "commands.mccourse.home_return_sucess": "Player returned Home!"
 }
