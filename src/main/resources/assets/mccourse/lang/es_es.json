@@ -53,5 +53,7 @@
 
   "commands.mccourse.home_set": "Hogar establecido en %s",
   "commands.mccourse.no_home_return": "No se ha establecido una posición de hogar!",
-  "commands.mccourse.home_return_sucess": "¡Jugador devuelto al hogar!"
+  "commands.mccourse.home_return_sucess": "¡Jugador devuelto al hogar!",
+
+  "sounds.mccourse.metal_detector_found_ore": "El detector de metales ha encontrado un ore"
 }

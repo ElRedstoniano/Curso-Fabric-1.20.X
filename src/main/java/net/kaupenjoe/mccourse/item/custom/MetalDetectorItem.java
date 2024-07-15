@@ -2,6 +2,7 @@ package net.kaupenjoe.mccourse.item.custom;
 
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.kaupenjoe.mccourse.util.ColorUtil;
 import net.kaupenjoe.mccourse.util.InventoryUtil;
 import net.minecraft.block.Block;
@@ -13,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
@@ -55,6 +57,9 @@ public class MetalDetectorItem extends Item {
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
                         addNbtDataToDataTablet(player, positionClicked.down(i), block);
                     }
+
+                    context.getWorld().playSound(null, positionClicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS, 1f, 1f);
 
                     break;
                 }

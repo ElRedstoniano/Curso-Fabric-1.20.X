@@ -6,6 +6,7 @@ import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.item.ModItemGroup;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.kaupenjoe.mccourse.util.ModRegistries;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -25,6 +26,8 @@ public class MCCourseMod implements ModInitializer {
 
 		ModRegistries.registerModStuffs();
 		ModEnchantments.registerModEnchantments();
+
+		ModSounds.registerSounds();
 
 		LOGGER.info("Hello Fabric world!");
 

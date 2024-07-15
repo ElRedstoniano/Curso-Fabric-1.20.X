@@ -53,5 +53,7 @@
 
   "commands.mccourse.home_set": "Home position set at %s",
   "commands.mccourse.no_home_return": "No Home position has been set!",
-  "commands.mccourse.home_return_sucess": "Player returned Home!"
+  "commands.mccourse.home_return_sucess": "Player returned Home!",
+
+  "sounds.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore"
 }
