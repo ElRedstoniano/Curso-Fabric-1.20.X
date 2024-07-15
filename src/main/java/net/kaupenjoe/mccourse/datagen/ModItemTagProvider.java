@@ -24,5 +24,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS)
                 .add(ModItems.CAULIFLOWER_SEEDS);
+
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_MUSIC_DISC);
     }
 }

@@ -90,6 +90,8 @@ public class ModModelProvider extends FabricModelProvider {
         //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
 
         registerDataTablet(itemModelGenerator,ModItems.DATA_TABLET);
+
+        itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
     }
     // Took a look from ItemModelGenerator.registerArmor() method
     private void registerDataTablet(ItemModelGenerator itemModelGenerator, Item dataTablet) {

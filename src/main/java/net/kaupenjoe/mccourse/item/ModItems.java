@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.*;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item PINK_GARNET = addToTab(
@@ -47,17 +49,21 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS ,new FabricItemSettings())));
     public static final Item PINK_GARNET_BOOTS = addToTab(registerItem("pink_garnet_boots",
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS ,new FabricItemSettings())));
-    public static final Item CAULIFLOWER_SEEDS = addToTab(registerItem("cauliflower_seeds",
-            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new FabricItemSettings())));
-
-    public static final Item DATA_TABLET = addToTab(registerItem("data_tablet",
-            new DataTabletItem(new FabricItemSettings().maxCount(1 ))));
     // Note: It's not necessary to apply ModArmorItem class to all armor items, just adding one will execute the code on
     // the ModArmorItem class
 
+    public static final Item CAULIFLOWER_SEEDS = addToTab(registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new FabricItemSettings())));
 
     public static final Item PINK_GARNET_HORSE_ARMOR = addToTab(registerItem("pink_garnet_horse_armor",
             new HorseArmorItem(14, "pink_garnet"/*3d model name*/ ,new FabricItemSettings())));
+
+    public static final Item DATA_TABLET = addToTab(registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().maxCount(1 ))));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = addToTab(registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL,
+                    new FabricItemSettings().maxCount(1 ).rarity(Rarity.RARE), 122)));
 
 
 

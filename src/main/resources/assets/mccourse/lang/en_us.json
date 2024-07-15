@@ -43,6 +43,9 @@
   "item.mccourse.metal_detector.found":  "{%s} has been found at %s coordinates",
   "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
+  "item.mccourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "itemgroup.pink_garnet_group": "Pink Garnet Mod Group",
 
   "enchantment.mccourse.lightning_striker": "Lightning Striker",

@@ -1,5 +1,5 @@
-[18:41:49] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.15.11
-[18:41:49] [main/INFO] (FabricLoader) Loading 59 mods:
+[23:48:52] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.15.11
+[23:48:52] [main/INFO] (FabricLoader) Loading 59 mods:
 	- fabric-api 0.92.2+1.20.1
 	- fabric-api-base 0.4.31+1802ada577
 	- fabric-api-lookup-api-v1 1.6.36+1802ada577
@@ -59,16 +59,16 @@
 	- mccourse 0.1-1.20.1
 	- minecraft 1.20.1
 	- mixinextras 0.3.5
-[18:41:49] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/9527e6b0d2449408958fd1302594dc65ec5ade9c/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[18:41:50] [main/INFO] (FabricLoader/Mixin) Attempting to load Fernflower decompiler (Threaded mode)
-[18:41:50] [main/INFO] (FabricLoader/Mixin) Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
-[18:41:50] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[18:41:50] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[18:41:51] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
-[18:41:54] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 118 milliseconds
-[18:41:54] [main/WARN] (FabricLoader/Mixin) @Final field GATHERABLE_ITEMS:Ljava/util/Set; in mccourse.mixins.json:ModAddGatherableItemsMixin from mod mccourse should be final
-[18:41:56] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[18:41:56] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[23:48:52] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/Usuario/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/9527e6b0d2449408958fd1302594dc65ec5ade9c/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[23:48:53] [main/INFO] (FabricLoader/Mixin) Attempting to load Fernflower decompiler (Threaded mode)
+[23:48:53] [main/INFO] (FabricLoader/Mixin) Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[23:48:53] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[23:48:53] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[23:48:54] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[23:48:57] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 123 milliseconds
+[23:48:57] [main/WARN] (FabricLoader/Mixin) @Final field GATHERABLE_ITEMS:Ljava/util/Set; in mccourse.mixins.json:ModAddGatherableItemsMixin from mod mccourse should be final
+[23:48:59] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[23:48:59] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
@@ -86,79 +86,71 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
 	... 9 more
-[18:41:56] [Render thread/INFO] (Minecraft) Setting user: Player346
-[18:41:56] [Render thread/INFO] (mccourse) Registering Mod Items for mccourse
-[18:41:56] [Render thread/INFO] (mccourse) Registering ModBlocks for mccourse
-[18:41:56] [Render thread/INFO] (mccourse) Registering mod enchantments for mccourse
-[18:41:56] [Render thread/INFO] (mccourse) Registering Mod Sounds for: mccourse
-[18:41:56] [Render thread/INFO] (mccourse) Hello Fabric world!
-[18:41:56] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[18:41:57] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
-[18:41:58] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-block-api-v1, fabric-resource-loader-v0, fabric-message-api-v1, fabric-key-binding-api-v1, fabric-blockrenderlayer-v1, fabric-networking-api-v1, fabric-api, fabric-crash-report-info-v1, fabric-lifecycle-events-v1, fabric-registry-sync-v0, fabric-command-api-v1, fabric-game-rule-api-v1, fabric-rendering-fluids-v1, fabric-renderer-registries-v1, fabric-command-api-v2, fabric-mining-level-api-v1, fabric-resource-conditions-api-v1, fabric-loot-api-v2, fabric-particles-v1, fabric-rendering-v0, fabric-containers-v0, fabric-block-view-api-v2, fabric-dimensions-v1, fabric-renderer-api-v1, fabric-sound-api-v1, fabric-events-lifecycle-v0, fabric-keybindings-v0, fabric-item-group-api-v1, fabric-screen-handler-api-v1, fabric-rendering-v1, fabric-biome-api-v1, fabric-data-attachment-api-v1, fabric-model-loading-api-v1, fabric-data-generation-api-v1, fabric-renderer-indigo, fabricloader, fabric-recipe-api-v1, fabric-loot-tables-v1, fabric-models-v0, fabric-object-builder-api-v1, fabric-item-api-v1, fabric-commands-v0, fabric-client-tags-api-v1, mccourse, fabric-networking-v0, fabric-transfer-api-v1, fabric-rendering-data-attachment-v1, fabric-content-registries-v0, fabric-screen-api-v1, fabric-transitive-access-wideners-v1, fabric-events-interaction-v0, fabric-convention-tags-v1, fabric-entity-events-v1, fabric-api-base, fabric-gametest-api-v1, fabric-api-lookup-api-v1)
-[18:41:58] [Worker-Main-8/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
-[18:41:58] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[18:41:59] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[18:41:59] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[18:41:59] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Auriculares (Realtek USB Audio)
-[18:41:59] [Render thread/INFO] (Minecraft) Sound engine started
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[18:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[18:42:00] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[18:42:00] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[18:42:00] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[18:42:00] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[18:42:04] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[18:42:04] [Render thread/INFO] (Minecraft) Loaded 1291 advancements
-[18:42:04] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.766 ms
-[18:42:04] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
-[18:42:04] [Server thread/INFO] (Minecraft) Generating keypair
-[18:42:05] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[18:42:06] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
-[18:42:06] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
-[18:42:06] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
-[18:42:07] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 68 %
-[18:42:07] [Render thread/INFO] (Minecraft) Time elapsed: 1690 ms
-[18:42:07] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[18:42:07] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[18:42:08] [Server thread/INFO] (Minecraft) Player346[local:E:db220279] logged in with entity id 212 at (-29.307178288514542, 63.0, -175.8093725838931)
-[18:42:08] [Server thread/INFO] (Minecraft) Player346 se ha unido a la partida
-[18:42:08] [Render thread/INFO] (Minecraft) Loaded 7 advancements
-[18:42:18] [Render thread/INFO] (Minecraft) [System] [CHAT] ¡No se han encontrado minerales!
-[18:42:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Se ha encontrado {Mena de hierro} en las coordenadas (-29, 34, -176)
-[18:42:20] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[18:42:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Captura de pantalla guardada como 2024-07-15_18.42.21.png
-[18:42:35] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[18:42:35] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:35] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:35] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
-[18:42:35] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
-[18:42:35] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
-[18:42:39] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[18:42:39] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:39] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
-[18:42:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
-[18:42:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
-[18:42:39] [Server thread/INFO] (Minecraft) Player346 lost connection: Desconectado
-[18:42:39] [Server thread/INFO] (Minecraft) Player346 ha abandonado la partida
-[18:42:39] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:39] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
-[18:42:39] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[18:42:39] [Server thread/INFO] (Minecraft) Stopping server
-[18:42:39] [Server thread/INFO] (Minecraft) Saving players
-[18:42:39] [Server thread/INFO] (Minecraft) Saving worlds
-[18:42:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
-[18:42:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
-[18:42:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
-[18:42:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Mundo nuevo (1)): All chunks are saved
-[18:42:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:42:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:42:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[18:42:41] [Render thread/INFO] (Minecraft) Stopping!
+[23:48:59] [Render thread/INFO] (Minecraft) Setting user: Player922
+[23:49:00] [Render thread/INFO] (mccourse) Registering Mod Items for mccourse
+[23:49:00] [Render thread/INFO] (mccourse) Registering ModBlocks for mccourse
+[23:49:00] [Render thread/INFO] (mccourse) Registering mod enchantments for mccourse
+[23:49:00] [Render thread/INFO] (mccourse) Registering Mod Sounds for: mccourse
+[23:49:00] [Render thread/INFO] (mccourse) Hello Fabric world!
+[23:49:00] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[23:49:00] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[23:49:02] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-model-loading-api-v1, fabric-biome-api-v1, fabric-recipe-api-v1, fabric-containers-v0, fabric-rendering-v0, fabric-content-registries-v0, fabric-renderer-indigo, fabric-game-rule-api-v1, fabric-loot-tables-v1, fabric-events-interaction-v0, fabric-object-builder-api-v1, fabric-registry-sync-v0, mccourse, fabric-command-api-v2, fabric-renderer-registries-v1, fabric-key-binding-api-v1, fabric-screen-api-v1, fabric-client-tags-api-v1, fabric-commands-v0, fabric-resource-loader-v0, fabric-api-lookup-api-v1, fabric-gametest-api-v1, fabric-rendering-v1, fabric-item-group-api-v1, fabric-mining-level-api-v1, fabric-block-api-v1, fabric-networking-api-v1, fabric-screen-handler-api-v1, fabric-models-v0, fabric-command-api-v1, fabric-networking-v0, fabricloader, fabric-resource-conditions-api-v1, fabric-convention-tags-v1, fabric-message-api-v1, fabric-dimensions-v1, fabric-rendering-fluids-v1, fabric-blockrenderlayer-v1, fabric-particles-v1, fabric-item-api-v1, fabric-data-attachment-api-v1, fabric-loot-api-v2, fabric-keybindings-v0, fabric-block-view-api-v2, fabric-rendering-data-attachment-v1, fabric-transfer-api-v1, fabric-renderer-api-v1, fabric-api, fabric-events-lifecycle-v0, fabric-entity-events-v1, fabric-sound-api-v1, fabric-data-generation-api-v1, fabric-crash-report-info-v1, fabric-lifecycle-events-v1, fabric-api-base, fabric-transitive-access-wideners-v1)
+[23:49:02] [Worker-Main-23/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[23:49:02] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[23:49:03] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[23:49:03] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[23:49:03] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Auriculares (Realtek USB Audio)
+[23:49:03] [Render thread/INFO] (Minecraft) Sound engine started
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[23:49:03] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23:49:03] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[23:49:17] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[23:49:17] [Render thread/INFO] (Minecraft) Loaded 1291 advancements
+[23:49:17] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.103 ms
+[23:49:17] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[23:49:17] [Server thread/INFO] (Minecraft) Generating keypair
+[23:49:18] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[23:49:19] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
+[23:49:19] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
+[23:49:19] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 0 %
+[23:49:19] [Render thread/INFO] (Minecraft) Preparando zona de aparición: 19 %
+[23:49:19] [Render thread/INFO] (Minecraft) Time elapsed: 1723 ms
+[23:49:19] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[23:49:19] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[23:49:20] [Server thread/INFO] (Minecraft) Player922[local:E:efc2bd03] logged in with entity id 165 at (-31.36962899304, 63.0, -174.6739743832191)
+[23:49:20] [Server thread/INFO] (Minecraft) Player922 se ha unido a la partida
+[23:49:21] [Render thread/INFO] (Minecraft) Loaded 7 advancements
+[23:49:30] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[23:50:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Captura de pantalla guardada como 2024-07-15_23.50.02.png
+[23:50:11] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[23:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
+[23:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
+[23:50:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[23:50:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[23:50:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[23:50:12] [Server thread/INFO] (Minecraft) Player922 lost connection: Desconectado
+[23:50:12] [Server thread/INFO] (Minecraft) Player922 ha abandonado la partida
+[23:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
+[23:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: {homepos:[I;-75,68,-188]}OK
+[23:50:12] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[23:50:12] [Server thread/INFO] (Minecraft) Stopping server
+[23:50:12] [Server thread/INFO] (Minecraft) Saving players
+[23:50:12] [Server thread/INFO] (Minecraft) Saving worlds
+[23:50:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[23:50:13] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[23:50:13] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[23:50:13] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Mundo nuevo (1)): All chunks are saved
+[23:50:13] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:50:13] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:50:13] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[23:50:13] [Render thread/INFO] (Minecraft) Stopping!

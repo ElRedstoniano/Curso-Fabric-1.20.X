@@ -1,4 +1,12 @@
 {
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "mccourse:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
   "metal_detector_found_ore": {
     "sounds": [
       "mccourse:metal_detector_found_ore"
