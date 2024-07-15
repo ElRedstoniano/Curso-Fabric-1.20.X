@@ -1,9 +1,10 @@
-// 1.20.1	2024-07-15T23:40:53.0357007	MC Course Mod/Model Definitions
+// 1.20.1	2024-07-16T00:35:57.8388865	MC Course Mod/Model Definitions
 0dc0efef841fcea75a620a33aa2722c58c446c04 assets\mccourse\models\block\pink_garnet_fence_post.json
 474eab744dd2c80808586f8d493885dd3e852ba9 assets\mccourse\models\item\cauliflower.json
 2aaabb21742bcdd08a5fdd12104e9ace9f8328d3 assets\mccourse\models\item\pink_garnet_boots_diamond_trim.json
 5cddb15b4051ce5429b03da2199012d3e79dafff assets\mccourse\models\item\pink_garnet_leggings_redstone_trim.json
 f14b8d1d291e5850841ec0e83acc57f2b0e90cb2 assets\mccourse\models\block\pink_garnet_door_top_left.json
+3c28ba1f863da5c3b3f34b859c96c58814bd2e77 assets\mccourse\blockstates\gem_empowering_station.json
 5b8a18781190e3ccb7b4bee37a35aa24a14c47f6 assets\mccourse\models\block\sound_block.json
 5c9bd8479827f76d62931596c42292eb1c1f0ac3 assets\mccourse\models\block\pink_garnet_door_bottom_left.json
 5209062bb753c2cdfbc491f54ab74d676bf00079 assets\mccourse\models\block\cauliflower_crop_stage2.json
@@ -13,6 +14,7 @@ acd908598229821c1b71825766e94b516cc9dc1b assets\mccourse\models\item\raw_pink_ga
 f7cfe32a7c4fbf4152511eb87c606d6a21cea79f assets\mccourse\models\item\pink_garnet_chestplate_redstone_trim.json
 882c909d777501be9a665907319c212c6837ebd6 assets\mccourse\models\item\bar_brawl_music_disc.json
 ed45f98edb97bd0132a2c8c9a71134188817d9d3 assets\mccourse\models\item\pink_garnet_chestplate_iron_trim.json
+2ab7eb05354c980c05330598767e6fb49d05ecbf assets\mccourse\models\item\gem_empowering_station.json
 7c9dd404736195c7921e786c004398a5ebae3da0 assets\mccourse\blockstates\nether_pink_garnet_ore.json
 3c8bf07f319757774147c8565c5c771276af1932 assets\mccourse\models\item\sound_block.json
 bcde24a898152896a04d9c1d664cddbfb6f10383 assets\mccourse\models\block\pink_garnet_slab.json

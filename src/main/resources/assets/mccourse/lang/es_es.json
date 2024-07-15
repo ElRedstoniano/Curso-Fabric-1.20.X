@@ -38,6 +38,7 @@
   "block.mccourse.pink_garnet_trapdoor": "Trampilla de granate rosa",
   "block.mccourse.pink_garnet_lamp_block": "Lámpara de granate rosa",
   "block.mccourse.petunia": "Petunia",
+  "block.mccourse.gem_empowering_station": "Mesa infusora de gemas",
 
   "item.mccourse.metal_detector":  "Detector de metales",
   "item.mccourse.metal_detector.found":  "Se ha encontrado {%s} en las coordenadas %s",

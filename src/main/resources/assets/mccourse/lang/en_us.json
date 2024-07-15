@@ -38,6 +38,7 @@
   "block.mccourse.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
   "block.mccourse.pink_garnet_lamp_block": "Pink Garnet Lamp Block",
   "block.mccourse.petunia": "Petunia",
+  "block.mccourse.gem_empowering_station": "Gem Empowering Station",
 
   "item.mccourse.metal_detector":  "Metal detector",
   "item.mccourse.metal_detector.found":  "{%s} has been found at %s coordinates",

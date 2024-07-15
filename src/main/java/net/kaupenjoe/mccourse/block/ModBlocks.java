@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.custom.CauliflowerCropBlock;
+import net.kaupenjoe.mccourse.block.custom.GemEmpoweringStationBlock;
 import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.block.custom.SoundBlock;
 import net.kaupenjoe.mccourse.item.ModItemGroup;
@@ -79,6 +80,9 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(Blocks.ALLIUM))));
     public static final Block POTTED_PETUNIA = registerBlockWithoutBlockItem("potted_petunia",
             new FlowerPotBlock( PETUNIA,FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM)));
+
+    public static final Block GEM_EMPOWERING_STATION = addToTab(registerBlock("gem_empowering_station",
+            new GemEmpoweringStationBlock( FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque())));
 
     private static <T extends Block> T registerBlock(String name, T block){
         registerBlockItem(name, block);
