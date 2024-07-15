@@ -1,0 +1,38 @@
+{
+  "metal_detector_found_ore": {
+    "sounds": [
+      "mccourse:metal_detector_found_ore"
+    ],
+    "subtitle": "sounds.mccourse.metal_detector_found_ore"
+  },
+  "pink_garnet_lamp_break": {
+    "sounds": [
+      "mccourse:pink_garnet_lamp_break"
+    ],
+    "subtitle": "sounds.mccourse.pink_garnet_lamp_break"
+  },
+  "pink_garnet_lamp_fall": {
+    "sounds": [
+      "mccourse:pink_garnet_lamp_fall"
+    ],
+    "subtitle": "sounds.mccourse.pink_garnet_lamp_fall"
+  },
+  "pink_garnet_lamp_hit": {
+    "sounds": [
+      "mccourse:pink_garnet_lamp_hit"
+    ],
+    "subtitle": "sounds.mccourse.pink_garnet_lamp_hit"
+  },
+  "pink_garnet_lamp_place": {
+    "sounds": [
+      "mccourse:pink_garnet_lamp_place"
+    ],
+    "subtitle": "sounds.mccourse.pink_garnet_lamp_place"
+  },
+  "pink_garnet_lamp_step": {
+    "sounds": [
+      "mccourse:pink_garnet_lamp_step"
+    ],
+    "subtitle": "sounds.mccourse.pink_garnet_lamp_step"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-15T15:51:12.5561537	MC Course Mod/Model Definitions
+// 1.20.1	2024-07-15T18:27:54.9545822	MC Course Mod/Model Definitions
 0dc0efef841fcea75a620a33aa2722c58c446c04 assets\mccourse\models\block\pink_garnet_fence_post.json
 474eab744dd2c80808586f8d493885dd3e852ba9 assets\mccourse\models\item\cauliflower.json
 2aaabb21742bcdd08a5fdd12104e9ace9f8328d3 assets\mccourse\models\item\pink_garnet_boots_diamond_trim.json
@@ -133,8 +133,8 @@ f02e0356dccacdf25fb28edbbbb2a77c529a03c7 assets\mccourse\models\item\pink_garnet
 0da1f5409c6162f0e9ab06650e5dfaba51467955 assets\mccourse\models\block\deepslate_pink_garnet_ore.json
 aa1433b7bfb75f3670d2152f3da12536f6a828a5 assets\mccourse\models\block\pink_garnet_fence_gate_wall_open.json
 7349e733a5211318ce6f17486706b6ea7bfd6cf3 assets\mccourse\blockstates\pink_garnet_button.json
-e0c2fbb346361ed599379f35e7631755d00e470e assets\mccourse\models\block\pink_garnet_stairs_inner.json
 5fd4f200b24314a0f7ef80b137eeeb0f3fd9188c assets\mccourse\models\item\pink_garnet_helmet_netherite_trim.json
+e0c2fbb346361ed599379f35e7631755d00e470e assets\mccourse\models\block\pink_garnet_stairs_inner.json
 85c2ac48adec9adce1b0291a1d2c670b3458b3a2 assets\mccourse\models\item\pink_garnet_leggings_iron_trim.json
 3fbd768e82a3ffecc676ee3b0eac9d78080a5c85 assets\mccourse\models\block\pink_garnet_fence_gate_wall.json
 e0ed4de0c81b30e99f61ecedd57b6075627edc2d assets\mccourse\blockstates\petunia.json
@@ -144,5 +144,5 @@ cba69c051c345a7ad11f32a048e510fdbc635638 assets\mccourse\models\item\pink_garnet
 dffd8f34420653012700c3054a8598ea31e7cb29 assets\mccourse\models\item\pink_garnet_lamp_block.json
 ab0d01435fa2dd8c7b86f4c91341a94555b94fe8 assets\mccourse\models\block\pink_garnet_door_bottom_right_open.json
 d021a938d392f78edcb9a1b20a50ec0fe31cde68 assets\mccourse\models\block\pink_garnet_stairs.json
-335e69eb99827a2f30f66e0e406f94e8ac74929a assets\mccourse\blockstates\pink_garnet_slab.json
 5a4a5991a50ca7df0024b8218cc30e1a8a05fca9 assets\mccourse\blockstates\end_stone_pink_garnet_ore.json
+335e69eb99827a2f30f66e0e406f94e8ac74929a assets\mccourse\blockstates\pink_garnet_slab.json

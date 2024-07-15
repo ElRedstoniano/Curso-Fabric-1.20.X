@@ -55,5 +55,10 @@
   "commands.mccourse.no_home_return": "No Home position has been set!",
   "commands.mccourse.home_return_sucess": "Player returned Home!",
 
-  "sounds.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore"
+  "sounds.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore",
+  "sounds.mccourse.pink_garnet_lamp_break": "Pink Garnet Lamp broken",
+  "sounds.mccourse.pink_garnet_lamp_footsteps": "Pink Garnet Lamp footsteps",
+  "sounds.mccourse.pink_garnet_lamp_hit": "Pink Garnet Lamp breaking",
+  "sounds.mccourse.pink_garnet_lamp_place": "Pink Garnet Lamp placed",
+  "sounds.mccourse.pink_garnet_lamp_use": "Pink Garnet Lamp used"
 }

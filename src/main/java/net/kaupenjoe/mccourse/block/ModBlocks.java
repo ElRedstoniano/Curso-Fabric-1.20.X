@@ -7,6 +7,7 @@ import net.kaupenjoe.mccourse.block.custom.CauliflowerCropBlock;
 import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.block.custom.SoundBlock;
 import net.kaupenjoe.mccourse.item.ModItemGroup;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.entity.effect.StatusEffects;
@@ -63,7 +64,8 @@ public class ModBlocks {
     public static final Block PINK_GARNET_LAMP_BLOCK = addToTab(registerBlock("pink_garnet_lamp_block",
             new PinkGarnetLampBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(Instrument.BASEDRUM).requiresTool().luminance(
-                            state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0))));
+                            state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.PINK_GARNET_LAMP_SOUNDS))));
 
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
