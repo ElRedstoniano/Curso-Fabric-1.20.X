@@ -65,6 +65,9 @@ public class ModItems {
             new MusicDiscItem(9, ModSounds.BAR_BRAWL,
                     new FabricItemSettings().maxCount(1 ).rarity(Rarity.RARE), 122)));
 
+    public static final Item RADIATION_STAFF = addToTab(registerItem("radiation_staff",
+            new Item(new FabricItemSettings().rarity(Rarity.RARE))));
+
 
 
     private static <T extends Item> T registerItem(String name, T item){
