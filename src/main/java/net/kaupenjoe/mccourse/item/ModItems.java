@@ -68,6 +68,9 @@ public class ModItems {
     public static final Item RADIATION_STAFF = addToTab(registerItem("radiation_staff",
             new Item(new FabricItemSettings().rarity(Rarity.RARE))));
 
+    public static final Item PINK_GARNET_BOW = addToTab(registerItem("pink_garnet_bow",
+            new BowItem(new FabricItemSettings().maxDamage(500))));
+
 
 
     private static <T extends Item> T registerItem(String name, T item){

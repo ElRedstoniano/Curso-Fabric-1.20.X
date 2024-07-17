@@ -10,13 +10,14 @@ import net.kaupenjoe.mccourse.block.custom.CauliflowerCropBlock;
 import net.kaupenjoe.mccourse.block.custom.PinkGarnetLampBlock;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Vec3d;
 
 import java.util.*;
 
@@ -86,7 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
-        //itemModelGenerator.reg
+
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
         //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
@@ -94,8 +95,11 @@ public class ModModelProvider extends FabricModelProvider {
         registerDataTablet(itemModelGenerator,ModItems.DATA_TABLET);
 
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+
+        registerBow(itemModelGenerator, ModItems.PINK_GARNET_BOW);
     }
     // Took a look from ItemModelGenerator.registerArmor() method
+    @SuppressWarnings("SameParameterValue")
     private void registerDataTablet(ItemModelGenerator itemModelGenerator, Item dataTablet) {
         //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
         Identifier identifier = Identifier.of(MCCourseMod.MOD_ID, "item/" + getItemIdAsString(dataTablet));
@@ -111,7 +115,7 @@ public class ModModelProvider extends FabricModelProvider {
         Models.GENERATED.upload(identifier3, TextureMap.layer0(identifier), itemModelGenerator.writer);
     }
     private JsonObject createDataTablet(Identifier id, Map<TextureKey, Identifier> textures, Item item/*, Model model*/){
-        System.out.println("TUTORIAL: " + id.toString() + " - " + textures.toString());
+//        System.out.println("TUTORIAL: " + id.toString() + " - " + textures.toString());
 
         JsonObject jsonObject = /*model*/Models.GENERATED.createJson(id, textures);
         JsonArray overridesJsonArray = new JsonArray();
@@ -132,6 +136,7 @@ public class ModModelProvider extends FabricModelProvider {
         return Registries.ITEM.getId(item).getPath();
     }
 
+    @SuppressWarnings("SameParameterValue")
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator, Block lampBlock) {
         Identifier identifier = TexturedModel.CUBE_ALL.upload(lampBlock, blockStateModelGenerator.modelCollector);
         Identifier identifier2 = blockStateModelGenerator.createSubModel(lampBlock, "_on", Models.CUBE_ALL, TextureMap::all);
@@ -139,5 +144,119 @@ public class ModModelProvider extends FabricModelProvider {
                 .accept(VariantsBlockStateSupplier.create(lampBlock)
                         .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED,
                                 identifier2, identifier)));
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    private void registerBow(ItemModelGenerator itemModelGenerator, Item item) {
+        if (item instanceof BowItem) {
+//            String bowItemPath = getItemIdAsString(item);
+            String bowItemPath = item.toString();
+
+            Identifier bowItemIdentifier = MCCourseMod.id("item/" + bowItemPath);
+//            Identifier identifier2 = Identifier.of(MCCourseMod.MOD_ID, "item/" + bowItemPath);
+
+            Models.GENERATED.upload(bowItemIdentifier, TextureMap.layer0(bowItemIdentifier), itemModelGenerator.writer,
+                    (id, textures) -> createBow(id, textures, item));
+
+            Model model = new Model(Optional.of(MCCourseMod.id("item/" + bowItemPath)), Optional.empty(),
+                TextureKey.LAYER0);
+
+            // Pulling bow 0-1-2 models
+            for(int i = 0 ; i < 3 ; i++){
+                Identifier actualPullingBowIdentifier = MCCourseMod.id("item/" + bowItemPath + "_pulling_" + i);
+                model.upload(actualPullingBowIdentifier, TextureMap.layer0(actualPullingBowIdentifier), itemModelGenerator.writer);
+            }
+        }
+    }
+
+    private JsonObject createBow(Identifier id, Map<TextureKey, Identifier> textures, Item item){
+        JsonObject jsonObject = Models.GENERATED.createJson(id, textures);
+        JsonObject displayNode = new JsonObject();
+
+        String predicatePath = MCCourseMod.MOD_ID + ":" + "item/" + item.toString() + "_pulling_";
+        JsonArray overridesJsonArray = new JsonArray();
+
+        overridesJsonArray.add(addPredicateWithModel(predicatePath + 0, Map.of("pulling", 1f)));
+        overridesJsonArray.add(addPredicateWithModel(predicatePath + 1, Map.of("pulling", 1f), Map.of("pull", 0.65f)));
+        overridesJsonArray.add(addPredicateWithModel(predicatePath + 2, Map.of("pulling", 1f), Map.of("pull", 0.9f)));
+
+        Vec3d rot1 = new Vec3d(0, 90, -25);
+        Vec3d scale1 = new Vec3d(0.68, 0.68, 0.68);
+        Vec3d trans1 = new Vec3d(1.13, 3.2, 1.13);
+
+        Vec3d rot2 = new Vec3d( 0, -90, 25);
+//        Vec3d scale2 = scale1;
+        Vec3d trans2 = new Vec3d(1.13, 3.2, 1.13);
+
+        Vec3d rot3 = new Vec3d( -80, -280, 40);
+        Vec3d scale3 = new Vec3d(0.9, 0.9, 0.9);
+        Vec3d trans3 = new Vec3d(-1, -2, 2.5);
+
+        Vec3d rot4 = new Vec3d(-80, 260, -40);
+//        Vec3d scale3 = new Vec3d(0.9, 0.9, 0.9);
+        Vec3d trans4 = new Vec3d(-1, -2, 2.5);
+
+        String fplh = ModelTransformationMode.FIRST_PERSON_LEFT_HAND.asString();
+        String fprh = ModelTransformationMode.FIRST_PERSON_RIGHT_HAND.asString();
+        String tplh = ModelTransformationMode.THIRD_PERSON_LEFT_HAND.asString();
+        String tprh = ModelTransformationMode.THIRD_PERSON_RIGHT_HAND.asString();
+
+        displayNode.add(fplh, addTransformationMode(
+                Map.of("rotation", rot1), Map.of("scale", scale1), Map.of("translation", trans1)));
+        displayNode.add(fprh, addTransformationMode(
+                Map.of("rotation", rot2), Map.of("scale", scale1), Map.of("translation", trans2)));
+        displayNode.add(tplh, addTransformationMode(
+                Map.of("rotation", rot3), Map.of("scale", scale3), Map.of("translation", trans3)));
+        displayNode.add(tprh, addTransformationMode(
+                Map.of("rotation", rot4), Map.of("scale", scale3), Map.of("translation", trans4)));
+
+        jsonObject.add("overrides", overridesJsonArray);
+        jsonObject.add("display", displayNode);
+
+        return jsonObject;
+    }
+
+    @SafeVarargs
+    private JsonObject addPredicate(Map<String, Float>... predicateValues){
+        JsonObject predicateContent = new JsonObject();
+        JsonObject predicateNode = new JsonObject();
+
+        for ( Map<String, Float> mapEntries : predicateValues){
+            for(Map.Entry<String, Float>  entry : mapEntries.entrySet()){
+                predicateContent.addProperty(entry.getKey(), entry.getValue());
+            }
+        }
+        predicateNode.add("predicate", predicateContent);
+
+        return predicateNode;
+    }
+
+    @SafeVarargs
+    private JsonObject addPredicateWithModel(String modelName, Map<String, Float>... predicateValues){
+        JsonObject predicateNode =  addPredicate(predicateValues);
+        predicateNode.addProperty("model", modelName);
+
+        return predicateNode;
+    }
+
+    @SafeVarargs
+    private JsonObject addTransformationMode( Map<String, Vec3d>... predicateValues){
+        JsonObject transformChildContent = new JsonObject();
+
+        for ( Map<String, Vec3d> mapEntries : predicateValues){
+            for(Map.Entry<String, Vec3d>  entry : mapEntries.entrySet()){
+                transformChildContent.add(entry.getKey(), addJsonArray( entry.getValue()));
+            }
+        }
+
+        return transformChildContent;
+    }
+
+    private JsonArray addJsonArray(Vec3d vec3d){
+        JsonArray arrayElement = new JsonArray();
+        arrayElement.add(vec3d.x);
+        arrayElement.add(vec3d.y);
+        arrayElement.add(vec3d.z);
+        return arrayElement;
     }
 }
