@@ -71,6 +71,9 @@ public class ModItems {
     public static final Item PINK_GARNET_BOW = addToTab(registerItem("pink_garnet_bow",
             new BowItem(new FabricItemSettings().maxDamage(500))));
 
+    public static final Item PINK_GARNET_SHIELD = addToTab(registerItem("pink_garnet_shield",
+            new ShieldItem(new FabricItemSettings().maxDamage(500))));
+
 
 
     private static <T extends Item> T registerItem(String name, T item){

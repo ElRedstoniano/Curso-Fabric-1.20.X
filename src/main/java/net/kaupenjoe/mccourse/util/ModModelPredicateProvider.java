@@ -13,6 +13,12 @@ public class ModModelPredicateProvider {
                 (stack, world, entity, seed) -> stack.hasNbt() ? 1f : 0f);
 
         registerBow(ModItems.PINK_GARNET_BOW);
+
+        ModelPredicateProviderRegistry.register(
+                ModItems.PINK_GARNET_SHIELD,
+                new Identifier("blocking"),
+                (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F
+        );
     }
 
     private static void registerBow(Item bow){
