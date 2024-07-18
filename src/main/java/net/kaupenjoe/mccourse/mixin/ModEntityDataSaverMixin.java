@@ -26,7 +26,7 @@ public class ModEntityDataSaverMixin implements IEntityDataSaver {
     protected void injectWriteMethod(NbtCompound nbt, CallbackInfoReturnable<NbtCompound> info){
         if(this.persistentData != null){
             nbt.put("mccourse.custom_data", persistentData);
-            System.out.println(persistentData.asString() + "OK");
+//            System.out.println(persistentData.asString() + "OK");
         } else{
 //            getPersistentData(); // Needs to be called somewhere
 //            nbt.put("mccourse.custom_data", persistentData);
