@@ -3,6 +3,7 @@
   "package": "net.kaupenjoe.mccourse.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BrewingRecipeRegistryMixin",
     "ExampleMixin",
     "ModAddGatherableItemsMixin",
     "ModEntityDataSaverMixin"

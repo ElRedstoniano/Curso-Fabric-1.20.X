@@ -51,6 +51,10 @@
   "item.mccourse.pink_garnet_bow": "Arco de granate rosa",
   "item.mccourse.pink_garnet_shield": "Escudo de granate rosa",
 
+  "item.minecraft.potion.effect.slimey_potion": "Poción de slimoso",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Poción arrojadiza de slimoso",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Poción persistente de slimoso",
+
   "itemgroup.pink_garnet_group": "Granate rosa mod group",
 
   "enchantment.mccourse.lightning_striker": "Invocación de rayos",
